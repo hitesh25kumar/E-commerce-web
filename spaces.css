@@ -1,0 +1,5 @@
+body { background-image: url(bg.jpg);}
+table{border:0px solid red;}
+#Categories{ font-family:Algerian; font-size:20px; top:28%; left:4%;}
+li{padding:14px; list-style-type:none; }
+#LargeItemSubMenu{font-size:14px; left:5%;}

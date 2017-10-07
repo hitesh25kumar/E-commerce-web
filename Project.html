@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>
+ Online E-Com.
+</title>
+<link rel="stylesheet" type="text/css" href="spaces.css" >
+<script src="tables.js"></script>
+</head>
+<body>
+<table width="100%" height="100%" border="1px">
+ <tr height="20%">
+   <td colspan="3">  <table border="0" width="100%" height="100%"> 
+      <tr><td colspan="2" style="color:yellow;font-family:Colonna MT;font-size:500%;text-align:center " width="75%">INDIA SHINING</td><td> <table border="0px" width="100%" height="100%"><tr> <td width="25%" style="color:white ;padding-left:5%">Email id</td> <td style="color:white">:</td> <td><input type="text" /></td></tr><tr> <td width="20%" style="color:white;padding-left:5%">Password</td> <td style="color:white">:</td> <td><input type="password"/></td></tr><tr> <th colspan="3"><input type="button" value="LOG IN"></th></tr></table>   </td></tr>   
+     </table> </td>
+ </tr>
+ <tr>
+  <td width="30%" height="100%">
+	 <ul style="color:#ffff00; position:absolute;" id="Categories">
+	     <li style="font-size:25 ; color:ffff99 ;font-family:Castellar ;font-family:bold ; padding:5px;"> <strong>CATEGORIES</strong></li>
+		 <li onclick="AddItem('Dell-17450','50000')"   onmouseover="getElementById('Image').src='laptop.jpg';getElementById('Text').innerHTML=' Computer for Rs. 50000/-'"onmouseout="getElementById('Image').src='dark.jpg';getElementById('Text').innerHTML='FOUNDER:Hitesh Kumar'">Computers</li>
+		 <li onclick="AddItem('Iphone4','18999')"    onmouseover="getElementById('Image').src='mobi1.jpg';getElementById('Text').innerHTML=' Mobiles for Rs. 18999/-'"onmouseout="getElementById('Image').src='dark.jpg';getElementById('Text').innerHTML='FOUNDER:Hitesh Kumar'">Mobiles</li>
+         <li onclick="AddItem('LCD-TV','20000')"     onmouseover="getElementById('Image').src='tv.jpg';getElementById('Text').innerHTML=' LCD for Rs. 20000/-'"onmouseout="getElementById('Image').src='dark.jpg ' ;getElementById('Text').innerHTML='FOUNDER:Hitesh Kumar"    >Televisions</li>
+		 <li onclick="AddItem('Camera','6000')"      onmouseover="getElementById('Image').src='camera.jpg';getElementById('Text').innerHTML='Camera for Rs. 6000/-'" onmouseout="getElementById('Image').src='dark.jpg ' ;getElementById('Text').innerHTML='FOUNDER:Hitesh Kumar '" >Cameras</li>
+		 <li onmouseover="document.getElementById('LargeItemSubMenu').style.display ='block'" onmouseout="document.getElementById('LargeItemSubMenu').style.display ='none'">Large Items
+		 <ul style="display:none; position:absolute; " id="LargeItemSubMenu">
+		 <li onclick="AddItem('WashingMachine','8000')"onmouseover="getElementById('Image').src='wm.jpg';getElementById('Text').innerHTML=' WashingMachine for Rs. 8000/-'" onmouseout="getElementById('Image').src='dark.jpg ' ;getElementById('Text').innerHTML='FOUNDER:Hitesh Kumar'">WashingMachine</li>
+		 <li onclick="AddItem('Air Conditioner','6000')"onmouseover="getElementById('Image').src='ac.jpg';getElementById('Text').innerHTML=' Air Conditioner for Rs. 24000/-'" onmouseout="getElementById('Image').src='dark.jpg ' ;getElementById('Text').innerHTML='FOUNDER:Hitesh Kumar'">Air Conditioner</li>
+         <li onclick="AddItem('Refrigerator','36000')"onmouseover="getElementById('Image').src='rfg.jpg';getElementById('Text').innerHTML='Refrigerator for Rs. 36000/-'" onmouseout="getElementById('Image').src='dark.jpg ' ;getElementById('Text').innerHTML='FOUNDER:Hitesh Kumar'">Refrigerator</li>
+	      </li></ul></ul>
+   </td>
+   <td width="45%" >
+       <table border="0px" height="100%" width="100%">
+	   <tr><td> <img src="dark.jpg" height="400px" width="100%"  id="Image"/> </td></tr>
+       <tr height="20%"><td id="Text" style="color:#ffff00; text-align:center; font-size:40px ;  font-family:Chiller"></td></tr></table> 
+  </td>
+   <td>
+      <table border="1" width="100%" height="100%" id="bill" style="color:ffff00;font-size:15px"   >   
+       <tr style="font-size:20px;color:ffff99"><th width="40%">NAME</th><th>ITEM</th><th>PRICE</th></tr>
+       <tr onclick="RemoveItem('1','2','3')"><th id="1"></th><th id="2"></th><th id="3"></th></tr>
+       <tr onclick="RemoveItem('11','12','13')"><th id="11"></th><th id="12"></th><th id="13"></th></tr>
+       <tr onclick="RemoveItem('21','22','23')"><th id="21"></th><th id="22"></th><th id="23"></th></tr>
+       <tr onclick="RemoveItem('31','32','33')"><th id="31"></th><th id="32"></th><th id="33"></th></tr>
+       <tr onclick="RemoveItem('41','42','43')"><th id="41"></th><th id="42"></th><th id="43"></th></tr>
+       <tr onclick="RemoveItem('51','52','53')"><th id="51"></th><th id="52"></th><th id="53"></th></tr>
+       <tr onclick="RemoveItem('61','62','63')"><th id="61"></th><th id="62"></th><th id="63"></th></tr>
+	   <tr><th id="71"></th><th id="72"></th><th id="73"></th></tr>
+       <tr><th style="font-size:20px;color:ffff99">Total</th><th></th><th id="83"></th></tr></table>
+   </td></tr>
+   </table></body>
+   </html>
